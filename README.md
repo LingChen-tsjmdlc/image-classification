@@ -23,12 +23,17 @@ pip install -r requirements.txt
 
 ### 基本用法
 ```bash
-python img_sorter.py
+python main.py
 ```
 默认行为：
 - 从 test/images 读取图片
 - 输出到 test/sorted_images
 - 移动文件并严格判断宽高比
+
+### 获取命令行帮助
+```bash
+python main.py -h
+```
 
 ### 完整参数
 | 参数              | 说明                             |
@@ -42,11 +47,11 @@ python img_sorter.py
 
 ### 启用误差判断 + 重命名
 ```bash
-python img_sorter.py --allow_error --rename
+python main.py --allow_error --rename
 ```
 ### 自定义路径 + 复制模式
 ```bash
-python img_sorter.py --input ~/photos --output ~/sorted_photos --copy
+python main.py --input ~/photos --output ~/sorted_photos --copy
 ```
 
 ## ⚠️ 5. 注意事项
@@ -76,4 +81,4 @@ image-classification/
 ```
 
 ## 📄 7. 许可协议
-MIT License
+[Apache License](/LICENSE)
